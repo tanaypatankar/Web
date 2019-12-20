@@ -6,14 +6,92 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
-	<!div class="container-fluid">
+
 	<div class="container-fluid p-3 my-3 bg-primary text-white">
-		<h1>My First Bootstrap Page</h1>
-		<p>This is some text.</p>
+		<h1>South Park</h1>
+		<p>I have nothing better to do and this is the first thing that came to mind.</p>
 	</div>
+
+
+	<ul class="nav nav-tabs">
+	  <li class="nav-item">
+	    <a class="nav-link active" href="kyle.html">Active</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Link</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Link</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link disabled" href="#">Disabled</a>
+	  </li>
+	</ul>
+
+	<div class="btn-group">
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1">Kyle</button>
+		<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal2">Eric</button>
+		<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal3">Kenny</button>
+		<button class="btn btn-primary">
+			<span class="spinner-border spinner-border-sm"></span>
+				Loading..
+		</button>
+		<div class="modal" id="myModal1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">The Jew</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img-fluid mx-auto d-block" width="400" height="300" src="Kyle-broflovski.png" alt="Kyle">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="myModal2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">The Fatass</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img-fluid mx-auto d-block" width="400" height="300" src="EricCartman.png" alt="Kyle">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="myModal3">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">The Poor</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<img class="img-fluid mx-auto d-block" width="400" height="300" src="KennyMcCormick.png" alt="Kyle">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  
+</div>
 </body>
 </html>
